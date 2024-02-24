@@ -27,3 +27,68 @@ body {
     margin: 0 auto;
     min-height: 50px;
 }
+
+.header {
+    background-color: #fff;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 24px 0;
+    color: #142B35;
+  
+}
+  
+.logo {
+    margin-left: 0;
+    margin-right: auto;
+    cursor: pointer;
+  
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+  
+.nav-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #142B35;
+}
+
+.info__heading {
+    display: flex;
+}
+
+.phone__info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #142B35;
+}
+
+.bth_design_about {
+    font-size: 16px;
+    color: #fff;
+    line-height: 19px;
+    font-weight: 400;
+    width: 135px;
+    height: 51px;
+    background-color: #3A98B2;
+    border-radius: 5px;
+    transition: .3s;
+    -webkit-transition:  0.3s;
+    -o-transition:  0.3s;
+    border: none;
+    cursor: pointer;
+}
+.bth_design_about:hover {
+    background-color: #328BA4;
+  }
+
