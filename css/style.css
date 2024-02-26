@@ -20,6 +20,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color:  #5B6E76;
+   
 
 }
 
@@ -124,11 +125,8 @@ body {
   .section-baner{
     background-image: url(../img/baner.png);
     display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+     flex-direction: column;
+    justify-content: flex-end;
     -ms-flex-direction: column;
     height: 687px;
     padding: 24% 47% 8% 6%;
@@ -169,8 +167,11 @@ body {
   
   }
 
+/* section services */
+
   .section-services {
-    padding: 80px 0 100px;
+    padding: 80px 0 84px;
+  
   }
 
   .section-title {
@@ -201,4 +202,113 @@ body {
     text-transform: uppercase;
     text-align: center;
   }
+
+  .section-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .services-card {
+    padding: 56px 75px;
+  width: calc(33.3% - 16px);
+  min-height: 378px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 16px;
+  box-shadow: 1px 1px 12px rgba(71, 71, 71, 0.03);
+  cursor: pointer;
+  transition: 0.03;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  color: #142B35;
+  }
+  .services-card:hover {
+    color: #3A98B2;
+  }
+
+  .img-card1{
+    background-image: url(../img/icon-card1.svg);
+  }
+  .img-card2 {
+    background-image: url(../img/icon-card2.svg);
+  }
+  .img-card3 {
+    background-image: url(../img/icon-card3.svg);
+  }
+  .img-card4 {
+    background-image: url(../img/icon-card4.svg);
+  }
+  .img-card5 {
+    background-image: url(../img/icon-card5.svg);
+  }
+  .img-card6 {
+    background-image: url(../img/icon-card6.svg);
+  }
+  .card {
+    width: 88px;
+    height: 88px;
+    border-radius: 100px;
+    margin-left: calc(50% - 44px);
+  }
   
+  .h4-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .service-card-text p{
+    color: #5B6E76;
+  }
+
+
+
+
+
+
+
+/** Adaptive **/
+
+  @media (max-width: 992px) { 
+    .container {
+      max-width: 992px;
+      margin: 0 auto;
+    }
+    .section-baner{
+      background-position: left;
+    }
+  
+    .baner-title {
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .section-baner-content_text p {
+      max-width: 357px;
+      font-size: 14px;
+    }
+    .services-card {
+      width: calc(50% - 16px);
+    }
+   }
+
+   @media (max-width: 768px) { 
+    .container {
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    .baner-title {
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .section-baner-content_text p {
+      max-width: 276px;
+    }
+    .services-card {
+      width: 100%;
+    }
+   }
