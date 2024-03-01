@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 320px;
+    min-width: 240px;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -54,6 +54,9 @@ ul,li{
 /* header */
 .header {
     background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .section-container {
@@ -65,10 +68,14 @@ ul,li{
     color: #142B35;
   
 }
-  
+
 .logo {
     cursor: pointer;
 }
+ .icon-info img {
+  width: 24px;
+  height: 24px;
+ }
 .nav-list {
     display: flex;
     align-items: center;
@@ -410,6 +417,87 @@ cursor: pointer;
 
 
 /** Adaptive **/
+.toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 15;
+}
+
+.toggle div {
+  width: 80%;
+  height: 2px;
+  background: #142B35;
+  margin: 3px 0;
+  z-index: 15;
+}
+
+.toggle.collapsed .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.collapsed .line2 {
+  opacity: 0;
+}
+
+.toggle.collapsed .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+ @media (max-width: 576px) {
+  header {
+    box-shadow: inset 0px -1px 4px rgba(0, 0, 0.02);
+  }
+  .info__heading {
+    border-left: none;
+    padding-left: 0;
+}
+  .nav, .phone__info, .bth_design_about {
+    display: none;
+  }
+ 
+  .toggle {
+    display: flex;
+  }
+  .nav.collapsed {
+    position: absolute;
+    left: 0;
+    top: 107px;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 552px;
+    flex-direction: column;
+    background-color:#fff;
+  }
+  .nav-list.collapsed {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-left: 16px;
+    padding-bottom: 120px;
+  }
+  
+  .nav-link {
+    padding-bottom: 24px;
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 16px;
+    font-size: 20px;
+    line-height: 2;
+  }
+  
+ }
 
   @media (max-width: 992px) { 
     .container {
@@ -432,6 +520,11 @@ cursor: pointer;
     }
     .services-card {
       width: calc(50% - 16px);
+    }
+    .section-contact {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
    }
 
