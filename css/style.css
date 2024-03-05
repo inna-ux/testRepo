@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 240px;
+    min-width: 320px;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -20,8 +20,6 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color:  #5B6E76;
-   
-
 }
 a {
   text-decoration: none;
@@ -49,6 +47,9 @@ ul,li{
     max-width: 1320px;
     margin: 0 auto;
     min-height: 50px;
+}
+.container-slider-design {
+  display: none;
 }
 
 /* header */
@@ -180,15 +181,7 @@ ul,li{
     padding-left: 32px;
   }
 
-  /* section */
-
-  .section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
   
-  }
 
 /* section services */
 
@@ -477,6 +470,10 @@ cursor: pointer;
 
 
   @media (max-width: 992px) { 
+    .container1320 {
+      padding: 0 16px;
+  
+    }
 
   /* banner */
 
@@ -505,6 +502,9 @@ cursor: pointer;
    }
 
    @media (max-width: 768px) { 
+    nav {
+      display: none;
+    }
 
     /* section-services */
 
@@ -520,9 +520,7 @@ cursor: pointer;
     header {
       box-shadow: inset 0px -1px 4px rgba(0, 0, 0.02);
     }
-    .section-container {
-      padding: 24px 28px 24px 16px;
-    }
+    
     .logo img {
       width: 97px;
       height: 25px;
@@ -601,5 +599,131 @@ cursor: pointer;
       line-height: 20px;
       padding-left: 8px;
     }
+
+    /* section-services */
+
+    .section-services {
+      padding: 40px 0 40px;
+    }
+    .section-services_title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    .p-class {
+      max-width: 271px;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+    }
+    .section-title {
+      padding-bottom: 32px;
+    }
+   /* slider */
+
+    .section-content {
+     display: none;
+    }
+
+    .container-slider-design {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .slider-wrapper {
+      width: 288px;
+      margin: 0 auto;
+      
+    }
+    .services-slider-card {
+    margin: 0 auto;
+    padding: 32px 23px;
+    min-height: 251px;
+    max-width:100%;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 1px 1px 12px rgba(71, 71, 71, 0.03);
+    color: #142B35;
+    }
+    
+    
+    .cardSlider {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      margin-left: calc(50% - 20px);
+    }
+    .img-card1Slider {
+      background-repeat: no-repeat;
+      background-position: center center; 
+      background-clip: content-box;
+      background-size: contain;
+    }
+    .img-card2Slider {
+      background-repeat: no-repeat;
+      background-position: center center; 
+      background-clip: content-box;
+      background-size: contain;
+    }
+    .img-card3Slider {
+      background-repeat: no-repeat;
+      background-position: center center; 
+      background-clip: content-box;
+      background-size: contain;
+    }
+    .img-card4Slider {
+      background-repeat: no-repeat;
+      background-position: center center; 
+      background-clip: content-box;
+      background-size: contain;
+    }
+    .img-card5Slider {
+      background-repeat: no-repeat;
+      background-position: center center; 
+      background-clip: content-box;
+      background-size: contain;
+    }
+    .img-card6Slider {
+      background-repeat: no-repeat;
+      background-position: center center; 
+      background-clip: content-box;
+      background-size: contain;
+    }
+
+    .h4-title {
+      font-size: 16px;
+      line-height: 26px;
+      margin-block-start: 16px;
+    }
+  
+    .service-card-text p{
+      font-size: 14px;
+      line-height: 21px;
+      margin-block-start: 16px;
+    }
+    .slick-dots{
+      display: flex;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      position: absolute;
+      bottom: 1px;
+      left: calc(50% - 70.5px);
+      gap: 9px;
+  }
+  .slick-dots li.slick-active button {
+    outline: transparent;
+    border-color: rgba(224, 224, 224, 1);
+    background-color: rgba(224, 224, 224, 1);
+  }
+  .slick-dots li button{
+      height: 13px;
+      width: 13px;
+      border: 2px solid transparent;
+      font-size: 0;
+      background-color: rgba(242, 185, 29, 1);
+      border-radius: 50%;
+      outline: transparent;
+      cursor: pointer
+  }
   
    }
