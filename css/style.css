@@ -410,7 +410,23 @@ border: none;
 cursor: pointer;
 }
 
+/* map */
 
+
+.map {
+  width: 100%;
+  height:60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+iframe {
+  width:97vw;
+  height: 50vh;
+  filter: grayscale(50%); 
+}
 
 
 /** Adaptive **/
@@ -511,9 +527,23 @@ cursor: pointer;
     .services-card {
       width: 100%;
     }
+    /* map */
+
+
+    iframe {
+      width:95vw;
+      height: 45vh;
+    }
    }
 
    @media (max-width: 576px) {
+
+    .container1320 {
+      padding: 0px 20px;
+    }
+    /* .container {
+      padding: 0px 10px;
+    } */
 
     /* header */
   
@@ -726,4 +756,23 @@ cursor: pointer;
       cursor: pointer
   }
   
+  /* map */
+  
+
+.map {
+  width: 95%;
+  height:30vh;
+  
+}
+
+iframe {
+  width:80vw;
+  height: 30vh;
+  filter: grayscale(50%); 
+}
+
+
+  
    }
+
+  
