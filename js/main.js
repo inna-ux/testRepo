@@ -25,51 +25,15 @@ navItems.forEach(el => el.addEventListener('click', closeMenu));
 // slider
 $(document).ready(function () {
   $('.sliders').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 2000,
     arrows: false,
     dots: true,
   });
 });
 
-//   $(document).ready(function () {
-//   $('.section-content').slick({
-//       infinite: true,
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: false,
-//       dots: true,
-//   });
-  
-// });
 
-
-
-// if(window.innerWidth < 576) {
-//   mobileOnlySlider();
-// }
-// $(window).resize(function(e){
-//   if(window.innerWidth < 576) {
-//       if(!$('.slider').hasClass('slick-initialized')){
-//           mobileOnlySlider();
-//       }
-
-//   }else{
-//       if($('.slider').hasClass('slick-initialized')){
-//           $('.slider').slick('unslick');
-//       }
-//   }
-// });
-
-// $(window).on('load resize', function() {
-//   if ($(window).width() < 576) {
-//     $('#items:not(.slick-initialized)').slick({
-//       centerMode: true,
-//       dots: true,
-//       infinite: true,
-//       speed: 100,
-//       slidesToShow: 1
-//     });
-//   } else {
-//     $("#items.slick-initialized").slick("unslick");
-//   }
-// });
 
