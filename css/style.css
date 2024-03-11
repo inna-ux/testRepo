@@ -530,6 +530,25 @@ iframe {
   padding: 0px 24px;
 }
 
+/* footer */
+
+.footer {
+  padding: 40px 60px;
+  background-color: #FCFDFE;
+  color: #142B35;
+}
+.section-footer {
+  border-top: 1px solid #E0E0E0;
+}
+.section-footer-info_privacyPolicy {
+   display: flex;
+   gap: 44px;
+}
+.footer-p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
 
 /** Adaptive **/
 .toggle {
@@ -643,9 +662,7 @@ iframe {
 
 @media (max-width: 576px) {
 
-  .container1320 {
-    padding: 0px 20px;
-  }
+ 
 
   /* .container {
       padding: 0px 10px;
@@ -732,12 +749,15 @@ iframe {
     font-size: 20px;
     line-height: 23px;
     font-weight: 600;
+    max-width: 273px;
   }
 
   .design_title {
     padding-left: 8px;
     margin-bottom: 15px;
   }
+
+
 
   .section-banner-content_text p {
     max-width: 283px;
