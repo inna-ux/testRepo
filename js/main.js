@@ -35,5 +35,17 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $('.sliders-block').slick({
+    infinite: true,
+    autoplay: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: true,
+  });
+});
+
 
 
