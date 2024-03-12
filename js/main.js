@@ -17,7 +17,7 @@ function closeMenu() {
     toggleBtn.classList.remove('collapsed');
     nav.classList.remove('collapsed');
     navList.classList.remove('collapsed');
-  }, 1000);  
+  }, 1000);
 }
 navItems.forEach(el => el.addEventListener('click', closeMenu));
 
