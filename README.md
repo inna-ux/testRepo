@@ -1,1 +1,2 @@
-https://github.com/inna-ux/testRepo/
+
+https://inna-ux.github.io/testRepo/
